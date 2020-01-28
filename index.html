@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Thinking Tree - Home</title>
+	<meta name="description" content="Thinking Tree">
+	<meta name="author" content="Scott R.">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif|Poppins" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/slick/slick.css">
+</head>
+
+<body>
+
+	<header class="navwrap container">
+		<img src="assets/images/thinkingtree.png" class="navlogo">
+		<ul class="navbar">
+			<li><a href="index.html" target="_blank">Home</a></li>
+			<li><a href="gallery.html" target="_blank">Gallery</a></li>
+			<li><a href="donate.html" target="_blank">Donate</a></li>
+			<li><a href="about.html" target="_blank">About</a></li>
+		</ul>
+	</header>
+
+	<section class="sliderwrap animated fadeIn">
+		<div class="featured-slider">
+			<div><div class="slider-image" style="background-image: url('assets/images/treehouse1.jpg')"></div></div>
+			<div><div class="slider-image" style="background-image: url('assets/images/treehouse2.jpg')"></div></div>
+			<div><div class="slider-image" style="background-image: url('assets/images/treehouse3.jpg')"></div></div>
+		</div>
+	</section>
+
+	<section class="contentwrap container">
+		<div class="homecontent animated fadeInUp"><a href="gallery.html" target="_blank"><img src="assets/images/galleryicon.png"></a><p>Sed quis lacus in tellus fringilla feugiat id at metus. Suspendisse pretium dictum quam in consequat.</p></div>
+		<div class="homecontent animated fadeInUp"><a href="donate.html" target="_blank"><img src="assets/images/donateicon.png"></a><p>Sed quis lacus in tellus fringilla feugiat id at metus. Ut massa metus, tempus nec posuere nec, commodo non lectus. Praesent ac ornare mauris.</p></div>
+		<div class="homecontent animated fadeInUp aboutimage"><a href="about.html" target="_blank"><img src="assets/images/abouticon.png"></a><p>Sed quis lacus in tellus fringilla feugiat id at metus. Suspendisse pretium dictum quam in consequat. Integer convallis eros et cursus scelerisque.</p></div>
+	</section>
+
+	<section class="calltoactionwrap">
+		<div class="text">
+			<h3>Sed quis lacus in tellus fringilla feugiat id at metus.</h3>
+			<a href="donate.html" class="button">DONATE NOW</a>
+		</div>
+	</section>
+
+	<footer>
+		<h3>Thinking Tree &bull; 777 Pine Trail, Oakvale, MN 49768 &bull; Main (123) 456.7890 &bull; Support (123) 456.7891</h3>
+	</footer>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/css/slick/slick.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$('.featured-slider').slick({
+				autoplay: true,
+				arrows: false,
+				adaptiveHeight: true,
+			});
+		});
+	</script>
+
+</body>
+</html>
