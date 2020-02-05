@@ -52,7 +52,8 @@ header ul li a {
 
 header ul li a:hover,
 header ul li a:focus,
-header ul li a:active{
+header ul li a:active,
+header ul li a.active{
 	color: #7dce94;
 }
 
@@ -81,6 +82,20 @@ header ul li a:active{
 	background-position: center;
 }
 
+.featured-slider::after {
+    content: 'Thinking Tree';
+    position: absolute;
+    width: 100%;
+    height: 0;
+    text-align: center;
+    top: 40%;
+    font-size: 55px;
+    color: #fff;
+    transform: translateY(50%);
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px #000;
+}
+
 /******************************************************************************/
 
 
@@ -97,6 +112,32 @@ header ul li a:active{
 .contentwrap2 {
 	display: grid;
 	margin: 40px auto;
+}
+
+.contentwrap3 {
+	display: grid;
+	grid-template-columns: repeat(3, 3fr);
+	margin: 50px auto;
+	grid-column-gap: 30px;
+}
+
+.contentwrap3 img {
+    width: 350px;
+    max-width: 100%;
+    height: 200px;
+    margin: 60px auto;
+    display: block;
+    border: solid 5px;
+    border-color: #7dce94;
+}
+
+.featherlight .featherlight-content{
+	border-color: #7dce94;
+	background: #7dce94;
+}
+
+.featherlight .featherlight-close-icon{
+	background: #7dce94;
 }
 
 .homecontent img {
@@ -136,11 +177,9 @@ header ul li a:active{
 	line-height: 2em;
 }
 
-/* About Image Alignment WIP
 .aboutimage img {
 	width: 130px;
 }
-*/
 
 .about2 {
 	margin-bottom: 60px;
